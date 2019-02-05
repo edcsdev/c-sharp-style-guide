@@ -291,7 +291,19 @@ several methods.
 All braces get their own line as it is the original C convention, not in C Sharp:
 
 **GOOD:**
+```csharp
+class MyClass {
+    void DoSomething() {
+        if (someTest) {
+          // ...
+        } else {
+          // ...
+        }
+    }
+}
+```
 
+**BAD:**
 ```csharp
 class MyClass
 {
@@ -303,20 +315,6 @@ class MyClass
         }
         else
         {
-          // ...
-        }
-    }
-}
-```
-
-**BAD:**
-
-```csharp
-class MyClass {
-    void DoSomething() {
-        if (someTest) {
-          // ...
-        } else {
           // ...
         }
     }
