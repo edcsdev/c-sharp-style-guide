@@ -288,21 +288,7 @@ several methods.
 
 ## Brace Style
 
-All braces get their own line as it is a C# convention:
-
-**BAD:**
-
-```csharp
-class MyClass {
-    void DoSomething() {
-        if (someTest) {
-          // ...
-        } else {
-          // ...
-        }
-    }
-}
-```
+All braces get their own line as it is the original C convention, not in C Sharp:
 
 **GOOD:**
 
@@ -317,6 +303,20 @@ class MyClass
         }
         else
         {
+          // ...
+        }
+    }
+}
+```
+
+**BAD:**
+
+```csharp
+class MyClass {
+    void DoSomething() {
+        if (someTest) {
+          // ...
+        } else {
           // ...
         }
     }
